@@ -25,3 +25,5 @@ With the exponential growth of online reviews, understanding public sentiment ca
    ```bash
    git clone https://github.com/yourusername/sentiment-analysis-imdb.git
    cd sentiment-analysis-imdb
+![Sentiment Analysis for Mental Health Support Chatbot](https://github.com/user-attachments/assets/b7688475-a503-401b-a263-ad7f950b4302)
+
