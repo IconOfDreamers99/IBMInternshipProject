@@ -1,0 +1,1 @@
+This project aims to provide mental health support through sentiment analysis. By classifying user sentiments, the application can offer appropriate suggestions and resources. This initiative aligns with mental health awareness goals, providing a tool for early identification of negative emotions and potentially reducing stigma around mental health discussions.
