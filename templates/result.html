@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Sentiment Analysis Result</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sentiment Analysis Result</h1>
+        </header>
+        
+        <div class="result-section">
+            <h2>Detected Sentiment:</h2>
+            <p class="sentiment-label">{{ sentiment }}</p>
+
+            <h3>Suggestions for You:</h3>
+            <ul>
+                {% for suggestion in suggestions %}
+                    <li>{{ suggestion }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="feedback-section">
+            <h3>Was this classification accurate?</h3>
+            <form action="{{ url_for('feedback') }}" method="POST">
+                <input type="hidden" name="user_input" value="{{ user_input }}">
+                <input type="hidden" name="sentiment_label" value="{{ sentiment }}">
+                
+                <button type="submit" name="correct" value="yes" class="feedback-btn">Yes</button>
+                <button type="submit" name="correct" value="no" class="feedback-btn">No</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>© 2024 Mental Health Support. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

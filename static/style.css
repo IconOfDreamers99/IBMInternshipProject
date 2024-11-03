@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf3e0; /* Soft warm yellow background */
+    color: #333333; /* Dark text color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the main container */
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #ff6f3c; /* Vibrant orange for the heading */
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #4a4a4a; /* Dark gray for better readability */
+}
+
+.form-section {
+    text-align: center; /* Centering the form section */
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cfc2bb; /* Light border */
+    border-radius: 5px;
+    font-size: 1em;
+    resize: none; /* Prevents resizing */
+    margin-bottom: 20px; /* Space below textarea */
+    background-color: #fff8e1; /* Light yellow background */
+}
+
+.submit-btn {
+    background-color: #ff6f3c; /* Vibrant orange */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.submit-btn:hover {
+    background-color: #e05a2a; /* Darker orange on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #ff6f3c; /* Same color as the heading for consistency */
+}
+
+.result-section {
+    margin-bottom: 30px;
+}
+
+.sentiment-label {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #ffb400; /* Golden yellow for sentiment label */
+}
+
+.feedback-section {
+    text-align: center; /* Center the feedback section */
+}
+
+.feedback-btn {
+    background-color: #4CAF50; /* Green for "Yes" */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 10px; /* Space between buttons */
+}
+
+.feedback-btn:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+.feedback-btn[value="no"] {
+    background-color: #f44336; /* Red for "No" */
+}
+
+.feedback-btn[value="no"]:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+.navigation {
+    text-align: center; /* Center the contents of the navigation div */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.thank-you-message {
+    text-align: center; /* Center the thank you message */
+    margin: 30px 0; /* Margin for spacing */
+    color: #4a4a4a; /* Consistent dark gray color */
+}
+
+.btn {
+    display: inline-block; /* Ensure it's a block for styling */
+    background-color: #ffb400; /* Golden yellow for button */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e09b00; /* Darker golden yellow on hover */
+}

@@ -1,0 +1,37 @@
+<!-- feedback.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Sentiment Correction</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Provide Feedback on Sentiment Classification</h2>
+        <p>It seems that our initial classification might not have been correct. Please help us improve by selecting the sentiment that best describes your input.</p>
+        
+        <form action="/submit_feedback" method="POST">
+            <label>Your Original Input:</label>
+            <div class="user-input">{{ user_input }}</div>
+
+            <label>Select the Correct Sentiment:</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="corrected_sentiment" value="positive" required> Positive
+                </label>
+                <label>
+                    <input type="radio" name="corrected_sentiment" value="neutral"> Neutral
+                </label>
+                <label>
+                    <input type="radio" name="corrected_sentiment" value="negative"> Negative
+                </label>
+            </div>
+
+            <input type="hidden" name="user_input" value="{{ user_input }}">
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>

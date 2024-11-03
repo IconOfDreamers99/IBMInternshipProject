@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Thank You!</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Thank You!</h1>
+        </header>
+        
+        <div class="thank-you-message">
+            <h2>Your feedback has been recorded!</h2>
+            <p>We appreciate your input, as it helps us improve our service.</p>
+            <p>If you have more thoughts or feelings to share, feel free to return to the home page.</p>
+        </div>
+
+        <div class="navigation">
+            <a href="{{ url_for('index') }}" class="btn">Go Back to Home</a>
+        </div>
+
+        <footer>
+            <p>© 2024 Mental Health Support. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
